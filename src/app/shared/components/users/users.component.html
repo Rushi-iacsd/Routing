@@ -1,0 +1,18 @@
+
+
+
+<div class="row">
+<div class="col-sm-4">
+<ul class="list-group">
+    <li class="list-group-item"
+   [routerLink] ="['/users', user.id]"
+    *ngFor="let user of userData">
+   {{user.username}}
+    </li>
+</ul>
+
+
+<hr>
+<button class="btn btn-primary" routerLink="/products">Go to Products</button>
+</div>
+</div>
