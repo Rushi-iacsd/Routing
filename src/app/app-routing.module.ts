@@ -4,9 +4,10 @@ import { RouterModule, Routes } from "@angular/router";
 import { DashboardComponent } from "./shared/components/dashboard/dashboard.component";
 import { ProductsComponent } from "./shared/components/products/products.component";
 import { UsersComponent } from "./shared/components/users/users.component";
-import { UserComponent } from "./shared/components/users/user/user.component";
-import {ProductComponent} from "./shared/components/products/product/product.component";
+
 import { PageNotFoundComponent } from "./shared/components/page-not-found/page-not-found.component";
+import { ProductComponent } from "./shared/components/products/product/product.component";
+import { UserComponent } from "./shared/components/users/user/user.component";
 
 const route : Routes = [
     {path : '', component: DashboardComponent},

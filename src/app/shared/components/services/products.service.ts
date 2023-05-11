@@ -31,4 +31,10 @@ getAllProducts() : Array<Iproduct>{
   return this.productArray
 }
 
+
+ getProduct(id : number) : Iproduct{
+  return this.productArray.find(prod => prod.pid ===id)!
+
+ }
+
 }

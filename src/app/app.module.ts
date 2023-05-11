@@ -8,6 +8,8 @@ import { ProductsComponent } from './shared/components/products/products.compone
 
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { UserComponent } from './shared/components/users/user/user.component';
+import { ProductComponent } from './shared/components/products/product/product.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardComponent,
     UsersComponent,
     ProductsComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

@@ -12,11 +12,11 @@ export class UsersService {
       id:1
     },
     {
-      username : "june",
+      username : "jhonny",
       id:2
     },
     {
-      username : "may",
+      username : "janardhan",
       id:3
     },    
   ]
@@ -24,8 +24,13 @@ export class UsersService {
   constructor() { }
 
   getAllUsers(){
-    return this.userArray;
+   return this.userArray;
   }
 
+
+  getUser(id:number){
+    return this.userArray.find(user => user.id ===id)
+
+  }
 
 }
