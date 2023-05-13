@@ -10,6 +10,7 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UserComponent } from './shared/components/users/user/user.component';
 import { ProductComponent } from './shared/components/products/product/product.component';
+import { NavclickDirective } from './shared/Directive/navclick.directive';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ProductComponent } from './shared/components/products/product/product.c
     ProductsComponent,
     NavbarComponent,
     UserComponent,
-    ProductComponent
+    ProductComponent,
+    NavclickDirective
   ],
   imports: [
     BrowserModule,
