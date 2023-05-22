@@ -1,0 +1,22 @@
+<p>edit-user works!</p>
+
+<p>
+    {{userObj|json}}
+</p>
+
+
+<div class="row">
+    <div class="col-md-9 offset-md-3">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text"  #username  [value]="userObj.username"    class="form-control" id="username">
+        </div>
+        
+        
+        <div class="text-right">
+            <button class="btn btn-primary" (click)="onUpdateUser(username)">
+                Update User
+            </button>
+        </div>
+    </div>
+</div>

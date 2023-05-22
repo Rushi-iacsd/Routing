@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Params } from "@angular/router";
+import { ActivatedRoute, Params, Router } from "@angular/router";
 import { Iusers } from "../../model/users";
 import { UsersService } from "../../services/users.service";
 
@@ -16,7 +16,8 @@ export class UserComponent implements OnInit{
 
 
     constructor(private _route : ActivatedRoute,
-      private _usersservice : UsersService){}
+      private _usersservice : UsersService,
+      private _router : Router){}
 
 
        ngOnInit(): void {
@@ -32,4 +33,12 @@ export class UserComponent implements OnInit{
             this.userObj = this._usersservice.getUser(this.userid)!;
         })
       }
-    }
+
+      goToEditUser(){
+        // navigate to editUsercomponent
+         this._router.navigate(['users',this.userid,'edit'])
+      }
+
+
+      }
+    

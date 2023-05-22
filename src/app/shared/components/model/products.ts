@@ -5,6 +5,7 @@ export interface Iproduct {
         pname: string;
         pid: number;
         pstatus: Tpstatus;
+        canReturn : 1 | 0
     }
     
 

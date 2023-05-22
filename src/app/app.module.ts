@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { UserComponent } from './shared/components/users/user/user.component';
 import { ProductComponent } from './shared/components/products/product/product.component';
 import { NavclickDirective } from './shared/Directive/navclick.directive';
+import { EditProductComponent } from './shared/components/products/edit-product/edit-product.component';
+import { EditUserComponent } from './shared/components/users/edit-user/edit-user.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { NavclickDirective } from './shared/Directive/navclick.directive';
     NavbarComponent,
     UserComponent,
     ProductComponent,
-    NavclickDirective
+    NavclickDirective,
+    EditProductComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

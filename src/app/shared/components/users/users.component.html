@@ -5,9 +5,11 @@
 <div class="col-sm-4">
 <ul class="list-group">
     <li class="list-group-item"
-   [routerLink] ="['/users', user.id]"
-    *ngFor="let user of userData">
-   {{user.username}}
+    *ngFor="let user of userData"
+    routerLink="/users/2"
+    [routerLink]="['/users',user.id]"
+    >
+    {{user.username}}
     </li>
 </ul>
 
