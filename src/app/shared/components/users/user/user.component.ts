@@ -36,7 +36,9 @@ export class UserComponent implements OnInit{
 
       goToEditUser(){
         // navigate to editUsercomponent
-         this._router.navigate(['users',this.userid,'edit'])
+         this._router.navigate(['users',this.userid,'edit'], {
+          queryParamsHandling : "preserve"
+         })
       }
 
 

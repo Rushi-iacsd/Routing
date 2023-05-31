@@ -5,10 +5,9 @@
 <div class="col-sm-4">
 <ul class="list-group">
     <li class="list-group-item"
-    *ngFor="let user of userData"
-    routerLink="/users/2"
-    [routerLink]="['/users',user.id]"
-    >
+    [routerLink]="['/users',user.id]" 
+    [queryParams]="{userRole : user.userRole}"
+    *ngFor="let user of userData">  
     {{user.username}}
     </li>
 </ul>
@@ -17,4 +16,10 @@
 <hr>
 <button class="btn btn-primary" routerLink="/products">Go to Products</button>
 </div>
+
+
+<div class="col-md-8">
+    <router-outlet></router-outlet>
+  </div>
 </div>
+

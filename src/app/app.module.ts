@@ -13,6 +13,7 @@ import { ProductComponent } from './shared/components/products/product/product.c
 import { NavclickDirective } from './shared/Directive/navclick.directive';
 import { EditProductComponent } from './shared/components/products/edit-product/edit-product.component';
 import { EditUserComponent } from './shared/components/users/edit-user/edit-user.component';
+import { LoginComponent } from './shared/components/login/login.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { EditUserComponent } from './shared/components/users/edit-user/edit-user
     ProductComponent,
     NavclickDirective,
     EditProductComponent,
-    EditUserComponent
+    EditUserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

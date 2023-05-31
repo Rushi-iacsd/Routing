@@ -13,6 +13,7 @@ export class EditUserComponent implements OnInit {
 
   userid !: number;
   userObj !: Iusers;
+  userRole !: string;
 
   constructor(private _userservice : UsersService,
      private _routes : ActivatedRoute,
@@ -27,8 +28,13 @@ export class EditUserComponent implements OnInit {
      this.userid = +Userparams['userid']
     //  console.log(this.userid)
    this.userObj = this._userservice.getUser(this.userid)!
-
+      
   })
+  this._routes.queryParams
+   .subscribe((params : Params) => {
+    console.log(params)
+    this.userRole = params['userRole']
+   })
   }
 
   
@@ -43,4 +49,8 @@ export class EditUserComponent implements OnInit {
     this._router.navigate(['/users', this.userid])
 
   }
+}
+
+function params(value: Params): void {
+  throw new Error('Function not implemented.');
 }
